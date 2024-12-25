@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0px;
+}
+
+h1 {
+    margin-top: 100px;
+    font-size: 25px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+iframe {
+    border: none;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* 方塊之間的間距 */
+}
+
+.box {
+    width: 700px; /* 方塊寬度 */
+    height: 200px; /* 方塊高度 */
+    background-color: #767e86d7; /* 方塊顏色 */
+    opacity: 0.8; /* 透明度 */
+    margin-top: -600px;
+    margin-right: 1000px;
+    z-index: -1;
+}
+
+
+
+/* Header 基本樣式 */
+.header {
+    top: 60px;
+    position: relative;
+    width: 100%;
+    height: 250px;
+    /* 可調整高度 */
+    overflow: hidden;
+}
+
+/* 底層色塊 */
+.background-color {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    width: 96%;
+    height: 90%;
+    background-color: #212537;
+    z-index: 1;
+}
+
+/* 前景圖片 */
+.header-image {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 96%;
+    height: 90%;
+    object-fit: cover;
+    z-index: 2;
+}
+
+ /* 前景圖片 */
+ .header-image {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 96%;
+    height: 90%;
+    object-fit: cover;
+    z-index: 2;
+}
+
+/* 中間的文字 */
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    z-index: 3;
+}
+
+
+/* 整體區塊樣式 */
+.origin-section {
+    display: flex;
+    align-items: center;
+    background-color: #faf7ef;
+    padding: 20px 40px;
+    border-radius: 10px;
+    /* position: relative; */
+    /* overflow: hidden; */
+    margin: 250px 200px 170px;
+    height: 400px;
+}
